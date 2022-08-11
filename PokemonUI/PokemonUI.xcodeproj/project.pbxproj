@@ -11,6 +11,7 @@
 		68D4CC7428A557F400A1F84E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D4CC7328A557F400A1F84E /* ContentView.swift */; };
 		68D4CC7628A557F500A1F84E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68D4CC7528A557F500A1F84E /* Assets.xcassets */; };
 		68D4CC7928A557F500A1F84E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68D4CC7828A557F500A1F84E /* Preview Assets.xcassets */; };
+		68D4CC8228A55D4700A1F84E /* TypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D4CC8128A55D4700A1F84E /* TypeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		68D4CC7328A557F400A1F84E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		68D4CC7528A557F500A1F84E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		68D4CC7828A557F500A1F84E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		68D4CC8128A55D4700A1F84E /* TypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 		68D4CC7028A557F400A1F84E /* PokemonUI */ = {
 			isa = PBXGroup;
 			children = (
+				68D4CC7F28A55C3F00A1F84E /* Views */,
 				68D4CC7128A557F400A1F84E /* PokemonUIApp.swift */,
 				68D4CC7328A557F400A1F84E /* ContentView.swift */,
 				68D4CC7528A557F500A1F84E /* Assets.xcassets */,
@@ -65,6 +68,22 @@
 				68D4CC7828A557F500A1F84E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		68D4CC7F28A55C3F00A1F84E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				68D4CC8028A55D3400A1F84E /* CommonViews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		68D4CC8028A55D3400A1F84E /* CommonViews */ = {
+			isa = PBXGroup;
+			children = (
+				68D4CC8128A55D4700A1F84E /* TypeView.swift */,
+			);
+			path = CommonViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68D4CC8228A55D4700A1F84E /* TypeView.swift in Sources */,
 				68D4CC7428A557F400A1F84E /* ContentView.swift in Sources */,
 				68D4CC7228A557F400A1F84E /* PokemonUIApp.swift in Sources */,
 			);
