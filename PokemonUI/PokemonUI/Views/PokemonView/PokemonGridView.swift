@@ -8,13 +8,31 @@
 import SwiftUI
 
 struct PokemonGridView: View {
+    var pokemonName: String = ""
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+
+            Image("Pikachu")
+                .resizable()
+                .scaledToFit()
+            Text(pokemonName)
+                .font(.headline)
+                .fontWeight(.black)
+                .foregroundColor(.white)
+            TypeView(pokemonType: "Electric")
+                .padding()
+
+        }
+        .background(.yellow)
+        .cornerRadius(12)
+        .shadow(color: .yellow, radius: 6, x: 0.0, y: 0.0)
     }
 }
 
 struct PokemonGridView_Previews: PreviewProvider {
     static var previews: some View {
-        PokemonGridView()
+        PokemonGridView(pokemonName: "Pikachu")
+            .previewLayout(.sizeThatFits)
+            .padding()
     }
 }
