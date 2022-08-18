@@ -8,18 +8,19 @@
 import SwiftUI
 
 struct PokemonGridView: View {
+    var pokemonModel: PokemonModel
     var pokemonName: String = ""
     var body: some View {
         VStack {
 
-            Image("Pikachu")
+            Image(pokemonModel.imageURL)
                 .resizable()
                 .scaledToFit()
-            Text(pokemonName)
+            Text(pokemonModel.name)
                 .font(.headline)
                 .fontWeight(.black)
                 .foregroundColor(.white)
-            TypeView(pokemonType: "Electric")
+            TypeView(pokemonType: pokemonModel.type)
                 .padding()
 
         }
@@ -31,7 +32,7 @@ struct PokemonGridView: View {
 
 struct PokemonGridView_Previews: PreviewProvider {
     static var previews: some View {
-        PokemonGridView(pokemonName: "Pikachu")
+        PokemonGridView(pokemonModel: samplePokemon[1])
             .previewLayout(.sizeThatFits)
             .padding()
     }
