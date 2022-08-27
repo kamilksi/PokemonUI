@@ -17,7 +17,7 @@ struct RegisterView: View {
                     .ignoresSafeArea()
                 VStack(spacing: 30){
                     AppTextField(placeholder: "Email", text: $email)
-                    AppTextField(placeholder: "Password", text: $password, isSecureField: false)
+                    AppTextField(placeholder: "Password", text: $password, isSecureField: true)
                     Spacer()
                     Button(action: {
                         viewModel.register(withEmail: email, password: password)
