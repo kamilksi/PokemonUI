@@ -6,9 +6,13 @@
 //
 
 import SwiftUI
+import Firebase
 
 @main
 struct PokemonUIApp: App {
+    init() {
+        FirebaseApp.configure()
+    }
     var body: some Scene {
         WindowGroup {
             ContentView()
