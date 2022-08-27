@@ -11,12 +11,14 @@ struct ContentView: View {
     @EnvironmentObject var viewModel: AuthViewModel
     var pokemonModel: PokemonModel
     var body: some View {
-        VStack {
-            if viewModel.userSession == nil {
-                LoginView()
-            } else {
-                HomeView(pokemonModel: pokemonModel)
-            }
+        NavigationView {
+            VStack {
+                if viewModel.userSession == nil {
+                    LoginView()
+                } else {
+                    HomeView(pokemonModel: pokemonModel)
+                }
+            }.navigationTitle("PokemonUI")
         }
     }
 }
