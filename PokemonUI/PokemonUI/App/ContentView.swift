@@ -8,14 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var viewModel: AuthViewModel
+    var pokemonModel: PokemonModel
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            if viewModel.userSession == nil {
+                LoginView()
+            } else {
+                HomeView(pokemonModel: pokemonModel)
+            }
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(pokemonModel: samplePokemon[0])
     }
 }
