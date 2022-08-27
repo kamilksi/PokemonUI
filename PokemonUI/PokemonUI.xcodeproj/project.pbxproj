@@ -16,6 +16,8 @@
 		682D2CBD28BAA27900FC4EC0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682D2CBC28BAA27900FC4EC0 /* User.swift */; };
 		682D2CC128BAA5E900FC4EC0 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682D2CC028BAA5E900FC4EC0 /* LoginView.swift */; };
 		682D2CC328BAA5F100FC4EC0 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682D2CC228BAA5F100FC4EC0 /* RegisterView.swift */; };
+		682D2CC528BAA99A00FC4EC0 /* AppTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682D2CC428BAA99A00FC4EC0 /* AppTextField.swift */; };
+		682D2CC728BAB03900FC4EC0 /* CustomButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682D2CC628BAB03900FC4EC0 /* CustomButtonView.swift */; };
 		68D4CC7228A557F400A1F84E /* PokemonUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D4CC7128A557F400A1F84E /* PokemonUIApp.swift */; };
 		68D4CC7428A557F400A1F84E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D4CC7328A557F400A1F84E /* ContentView.swift */; };
 		68D4CC7628A557F500A1F84E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68D4CC7528A557F500A1F84E /* Assets.xcassets */; };
@@ -32,6 +34,8 @@
 		682D2CBC28BAA27900FC4EC0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		682D2CC028BAA5E900FC4EC0 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		682D2CC228BAA5F100FC4EC0 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		682D2CC428BAA99A00FC4EC0 /* AppTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTextField.swift; sourceTree = "<group>"; };
+		682D2CC628BAB03900FC4EC0 /* CustomButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonView.swift; sourceTree = "<group>"; };
 		68D4CC6E28A557F400A1F84E /* PokemonUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokemonUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68D4CC7128A557F400A1F84E /* PokemonUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonUIApp.swift; sourceTree = "<group>"; };
 		68D4CC7328A557F400A1F84E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -135,6 +139,8 @@
 			isa = PBXGroup;
 			children = (
 				68D4CC8128A55D4700A1F84E /* TypeView.swift */,
+				682D2CC428BAA99A00FC4EC0 /* AppTextField.swift */,
+				682D2CC628BAB03900FC4EC0 /* CustomButtonView.swift */,
 			);
 			path = CommonViews;
 			sourceTree = "<group>";
@@ -246,8 +252,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				682D2CC528BAA99A00FC4EC0 /* AppTextField.swift in Sources */,
 				68D4CC8228A55D4700A1F84E /* TypeView.swift in Sources */,
 				682D2CC328BAA5F100FC4EC0 /* RegisterView.swift in Sources */,
+				682D2CC728BAB03900FC4EC0 /* CustomButtonView.swift in Sources */,
 				68D4CC7428A557F400A1F84E /* ContentView.swift in Sources */,
 				68D4CC8628A5621A00A1F84E /* PokemonGridView.swift in Sources */,
 				682D2CC128BAA5E900FC4EC0 /* LoginView.swift in Sources */,

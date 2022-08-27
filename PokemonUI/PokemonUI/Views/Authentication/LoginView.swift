@@ -8,8 +8,34 @@
 import SwiftUI
 
 struct LoginView: View {
+    @State private var email: String = ""
+    @State private var password: String = ""
+    @EnvironmentObject var viewModel: AuthViewModel
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            ZStack{
+                Color("backgroundColor")
+                    .ignoresSafeArea()
+                VStack(spacing: 30){
+                    AppTextField(placeholder: "Email", text: $email)
+                    AppTextField(placeholder: "Password", text: $password, isSecureField: true)
+
+                    Spacer()
+                    Button(action: {
+                        viewModel.login(withEmail: email, password: password)
+                    }, label: {
+                        CustomButtonView(buttonTitle: "Log In")
+                            .foregroundColor(.white)
+                    })
+                    NavigationLink(destination: {
+                        RegisterView().navigationBarBackButtonHidden(true)
+                    }, label: {                        Text("Don't have an account?")
+                        Text("Sign Up").fontWeight(.bold)
+                    }).foregroundColor(.white)
+
+                }
+                .padding()
+                .padding(.top, 50)
+            }.navigationTitle("PokemonUI")
     }
 }
 

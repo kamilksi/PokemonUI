@@ -15,7 +15,7 @@ struct PokemonUIApp: App {
     }
     var body: some Scene {
         WindowGroup {
-            ContentView().environmentObject(AuthViewModel.shared)
+            ContentView(pokemonModel: samplePokemon[0]).environmentObject(AuthViewModel.shared)
         }
     }
 }
