@@ -12,6 +12,8 @@
 		682D2CB228BA9D8700FC4EC0 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 682D2CB128BA9D8700FC4EC0 /* FirebaseFirestore */; };
 		682D2CB428BA9D8700FC4EC0 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 682D2CB328BA9D8700FC4EC0 /* FirebaseFirestoreSwift */; };
 		682D2CB628BA9D8700FC4EC0 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 682D2CB528BA9D8700FC4EC0 /* FirebaseStorage */; };
+		682D2CB928BA9E6300FC4EC0 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682D2CB828BA9E6300FC4EC0 /* AuthViewModel.swift */; };
+		682D2CBD28BAA27900FC4EC0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682D2CBC28BAA27900FC4EC0 /* User.swift */; };
 		68D4CC7228A557F400A1F84E /* PokemonUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D4CC7128A557F400A1F84E /* PokemonUIApp.swift */; };
 		68D4CC7428A557F400A1F84E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D4CC7328A557F400A1F84E /* ContentView.swift */; };
 		68D4CC7628A557F500A1F84E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68D4CC7528A557F500A1F84E /* Assets.xcassets */; };
@@ -24,6 +26,8 @@
 
 /* Begin PBXFileReference section */
 		682D2CAC28BA9D0900FC4EC0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		682D2CB828BA9E6300FC4EC0 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		682D2CBC28BAA27900FC4EC0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		68D4CC6E28A557F400A1F84E /* PokemonUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokemonUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68D4CC7128A557F400A1F84E /* PokemonUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonUIApp.swift; sourceTree = "<group>"; };
 		68D4CC7328A557F400A1F84E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -50,6 +54,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		682D2CBA28BA9EA800FC4EC0 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				682D2CB828BA9E6300FC4EC0 /* AuthViewModel.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		682D2CBB28BA9ED200FC4EC0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				682D2CBA28BA9EA800FC4EC0 /* Auth */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		68D4CC6528A557F400A1F84E = {
 			isa = PBXGroup;
 			children = (
@@ -72,7 +92,7 @@
 				68FD066628AC3D1A005F599F /* App */,
 				68D4CC8728A56B1E00A1F84E /* Model */,
 				68D4CC7F28A55C3F00A1F84E /* Views */,
-				68D4CC7128A557F400A1F84E /* PokemonUIApp.swift */,
+				682D2CBB28BA9ED200FC4EC0 /* Controller */,
 				682D2CAC28BA9D0900FC4EC0 /* GoogleService-Info.plist */,
 				68D4CC7528A557F500A1F84E /* Assets.xcassets */,
 				68D4CC7728A557F500A1F84E /* Preview Content */,
@@ -117,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				68D4CC8828A56B2900A1F84E /* PokemonModel.swift */,
+				682D2CBC28BAA27900FC4EC0 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -124,6 +145,7 @@
 		68FD066628AC3D1A005F599F /* App */ = {
 			isa = PBXGroup;
 			children = (
+				68D4CC7128A557F400A1F84E /* PokemonUIApp.swift */,
 				68D4CC7328A557F400A1F84E /* ContentView.swift */,
 				68FD066728AC3D26005F599F /* HomeView.swift */,
 			);
@@ -213,6 +235,8 @@
 				68D4CC8228A55D4700A1F84E /* TypeView.swift in Sources */,
 				68D4CC7428A557F400A1F84E /* ContentView.swift in Sources */,
 				68D4CC8628A5621A00A1F84E /* PokemonGridView.swift in Sources */,
+				682D2CB928BA9E6300FC4EC0 /* AuthViewModel.swift in Sources */,
+				682D2CBD28BAA27900FC4EC0 /* User.swift in Sources */,
 				68FD066828AC3D26005F599F /* HomeView.swift in Sources */,
 				68D4CC8928A56B2900A1F84E /* PokemonModel.swift in Sources */,
 				68D4CC7228A557F400A1F84E /* PokemonUIApp.swift in Sources */,
