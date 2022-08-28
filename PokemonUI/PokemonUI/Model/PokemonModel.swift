@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct PokemonModel: Encodable, Identifiable {
+struct PokemonModel: Encodable,Decodable,Identifiable {
     let id: Int
     let name: String
     let imageURL: String
