@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		680EDEDE28BBB08500162C55 /* PokemonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680EDEDD28BBB08500162C55 /* PokemonViewModel.swift */; };
 		682D2CAD28BA9D0900FC4EC0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 682D2CAC28BA9D0900FC4EC0 /* GoogleService-Info.plist */; };
 		682D2CB028BA9D8700FC4EC0 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 682D2CAF28BA9D8700FC4EC0 /* FirebaseAuth */; };
 		682D2CB228BA9D8700FC4EC0 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 682D2CB128BA9D8700FC4EC0 /* FirebaseFirestore */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		680EDEDD28BBB08500162C55 /* PokemonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonViewModel.swift; sourceTree = "<group>"; };
 		682D2CAC28BA9D0900FC4EC0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		682D2CB828BA9E6300FC4EC0 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		682D2CBC28BAA27900FC4EC0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				682D2CBA28BA9EA800FC4EC0 /* Auth */,
+				680EDEDD28BBB08500162C55 /* PokemonViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 				682D2CC728BAB03900FC4EC0 /* CustomButtonView.swift in Sources */,
 				68D4CC7428A557F400A1F84E /* ContentView.swift in Sources */,
 				68D4CC8628A5621A00A1F84E /* PokemonGridView.swift in Sources */,
+				680EDEDE28BBB08500162C55 /* PokemonViewModel.swift in Sources */,
 				682D2CC128BAA5E900FC4EC0 /* LoginView.swift in Sources */,
 				682D2CB928BA9E6300FC4EC0 /* AuthViewModel.swift in Sources */,
 				682D2CBD28BAA27900FC4EC0 /* User.swift in Sources */,
